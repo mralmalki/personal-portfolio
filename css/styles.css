@@ -1,0 +1,1043 @@
+/* apply a natural box layout model to all elements */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* Navigation */
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 48;
+}
+
+.openbtn {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.openbtn:hover {
+    color: white;
+}
+
+.menu-button {
+    font-size: 30px !important;
+    position: relative;
+    top: 6px;
+    left: -4px;
+}
+
+.menu-text {
+    font-size: 9px;
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.all-over-bkg {
+    display: none;
+}
+
+.is-visible {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    display: block;
+}
+
+#mySidenav {
+    z-index: 10000;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    background-color: white;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.sidenav a:hover {
+    color: crimson;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 32px;
+    margin-left: 50px;
+}
+
+main {
+    transition: margin-left .5s;
+    padding: 0;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figcaption,
+li,
+button {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h1 {
+    color: cadetblue;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: cadetblue;
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+li {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+
+/* Header */
+header {
+    background-color: cadetblue;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header h1 {
+    font-family: 'Antonio', sans-serif;
+    color: black;
+    font-size: 21px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover {
+    color: crimson;
+}
+
+.logo-img {
+    position: fixed;
+    right: 30px;
+    width: 46px;
+    border: 3px solid crimson;
+    border-radius: 50%;
+}
+
+
+/* About */
+#about {
+    padding: 30px 65px 50px;
+}
+
+#about h1 {
+    margin-bottom: 10px;
+    font-size: 34px;
+}
+
+#about .about-description {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#about .about-img {
+    width: 280px;
+}
+
+#about .about-text {
+    padding: 10px 35px 10px;
+}
+
+#about .red-text {
+    font-weight: 700;
+    color: crimson;
+}
+
+#about .hobbies-container {
+    margin-top: 10px;
+}
+
+#about .hobbies-container h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#about .hobbies {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+#about .hobby {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about .hobbies-container .material-symbols-outlined {
+    color: crimson;
+    font-size: 23px;
+    margin-right: 7px;
+}
+
+
+/* Contact */
+.contact-container {
+    background-color: cadetblue;
+    padding: 3px 0 15px;
+}
+
+.contact-container h2 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact ul {
+    width: 77px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact ul li a i {
+    color: black;
+    font-size: 22px;
+}
+
+.contact ul li i {
+    color: black;
+    font-size: 5px;
+}
+
+.contact ul li a i:hover {
+    color: crimson;
+}
+
+
+/* Resume */
+#resume h1 {
+    color: rgb(31, 134, 139);
+    margin-bottom: 30px;
+    font-size: 31px;
+}
+
+#resume h2 {
+    font-size: 20px;
+    color: cadetblue;
+    margin: 0;
+}
+
+#resume p,
+#resume li {
+    font-size: 14px;
+    line-height: 1.1em;
+}
+
+#resume .resume-intro {
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#resume .resume-intro-text p {
+    text-align: center;
+}
+
+#resume button {
+    background-color: crimson;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+#resume button:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+#resume article {
+    margin: 0 25px 60px;
+}
+
+#resume hr {
+    color: cadetblue;
+    border: 3px solid cadetblue;
+}
+
+#resume .in-line-text {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+}
+
+#resume li {
+    width: 350px;
+    list-style-type: disc;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    line-height: 1.2em;
+}
+
+
+/* Projects */
+#projects {
+    min-height: 72vh;
+}
+
+.project {
+    padding: 40px 30px 0;
+}
+
+#projects h2 {
+    color: cadetblue;
+    font-size: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#projects h3 {
+    color: cadetblue;
+    font-size: 18px;
+    margin: 50px 0 15px;
+}
+
+#projects p {
+    margin-top: 0;
+}
+
+#projects li {
+    list-style-type: disc;
+    margin-left: 70px;
+}
+
+#projects hr {
+    color: cadetblue;
+    border: 3px solid cadetblue;
+}
+
+#projects .button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#projects section {
+    margin-bottom: 40px;
+}
+
+#projects article {
+    margin-top: 50px;
+    padding: 2.5em 0;
+}
+
+#projects .projects-container {
+    max-width: 1100px;
+    margin: 0 auto 15px;
+}
+
+#projects .projects-container h2,
+#projects .projects-container figcaption {
+    color: #990000;
+    font-size: 20px;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+#projects .projects-container h2 {
+    color: cadetblue;
+    font-size: 28px;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+#projects .projects-container figcaption {
+    font-size: 13px;
+}
+
+/* https://css-tricks.com/snippets/css/typewriter-effect/ */
+#projects a.typewrite {
+    font-size: 25px;
+    color: crimson;
+    text-decoration: none;
+}
+
+#projects .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#projects figure {
+    background: rgb(228, 167, 10);
+    width: 350px;
+    margin: 1.2em;
+    padding: 0.5em;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+#projects .gallery-img {
+    width: 100%;
+}
+
+#projects li {
+    font-size: 13px;
+}
+
+.project button {
+    background-color: crimson;
+    color: white;
+    margin-bottom: 30px;
+    padding: 7px 13px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    text-align: center;
+}
+
+.project button:hover {
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+/*!
+* Hover.css (http://ianlunn.github.io/Hover/)
+* Version: 2.3.2
+* Author: Ian Lunn @IanLunn
+* Author URL: http://ianlunn.co.uk/
+* Github: https://github.com/IanLunn/Hover
+
+* Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+*/
+/* 2D TRANSITIONS */
+/* Grow */
+#projects .hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+#projects .hvr-grow:hover,
+#projects .hvr-grow:focus,
+#projects .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/* MEDIA QUERIES */
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    p {
+        font-size: 17px;
+        line-height: 1.4em;
+    }
+
+    #about {
+        padding: 40px 30px 70px;
+    }
+
+    #about h1 {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    #about .about-description {
+        margin-top: 35px;
+    }
+
+    #about .about-img {
+        width: 300px;
+    }
+
+    #about .about-text {
+        margin-top: 3px;
+        padding: 10px 30px 10px;
+    }
+
+    #about .hobbies-container {
+        margin-top: 35px;
+    }
+
+    #about .hobbies-container h2 {
+        font-size: 29px;
+        margin-bottom: 10px;
+    }
+
+    #about .hobbies-container .material-symbols-outlined {
+        font-size: 30px;
+    }
+
+    .contact-container {
+        padding: 13px 0 30px;
+    }
+
+    .contact-container h2 {
+        font-size: 24px;
+    }
+
+    .contact ul {
+        width: 95px;
+    }
+
+    .contact ul li a i {
+        font-size: 25px;
+    }
+
+    #resume h1 {
+        font-size: 31px;
+        margin-bottom: 30px;
+    }
+
+    #resume h2 {
+        font-size: 23px;
+    }
+
+    #resume p,
+    #resume li {
+        font-size: 17px;
+
+    }
+
+    #resume .resume-intro {
+        margin-bottom: 45px;
+    }
+
+    #resume button {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    #resume article {
+        margin: 0 100px 60px;
+    }
+
+    #resume li {
+        width: 350px;
+        line-height: 1.2em;
+    }
+
+    .project {
+        padding: 40px 100px 0;
+    }
+
+    #projects section {
+        margin-bottom: 40px;
+    }
+
+    #projects article {
+        padding-top: 0;
+    }
+
+    #projects .projects-container {
+        margin: 0 auto 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #projects .projects-container h2 {
+        font-size: 29px;
+        margin: 40px 0 10px;
+    }
+
+    #projects .projects-container figcaption {
+        font-size: 17px;
+    }
+
+    #projects a.typewrite {
+        font-size: 26px;
+    }
+
+    #projects li {
+        font-size: 17px;
+    }
+
+    .project button {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    p {
+        font-size: 17px;
+        line-height: 1.4em;
+    }
+
+    #about {
+        padding: 40px 30px 70px;
+    }
+
+    #about h1 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    #about .about-description {
+        margin-top: 35px;
+    }
+
+    #about .about-img {
+        width: 300px;
+    }
+
+    #about .about-text {
+        margin-top: 3px;
+        padding: 10px 30px 10px;
+    }
+
+    #about .hobbies-container {
+        margin-top: 35px;
+    }
+
+    #about .hobbies-container h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    #about .hobbies-container .material-symbols-outlined {
+        font-size: 30px;
+    }
+
+    .contact-container {
+        padding: 13px 0 30px;
+    }
+
+    .contact-container h2 {
+        font-size: 25px;
+    }
+
+    .contact ul li a i {
+        font-size: 28px;
+    }
+
+    #resume h1 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    #resume h2 {
+        font-size: 25px;
+    }
+
+    #resume p,
+    #resume li {
+        font-size: 18px;
+
+    }
+
+    #resume .resume-intro {
+        margin-bottom: 45px;
+    }
+
+    #resume button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    #resume article {
+        margin: 0 130px 60px;
+    }
+
+    #resume li {
+        width: 360px;
+        line-height: 1.2em;
+    }
+
+    .project {
+        padding: 40px 100px 0;
+    }
+
+    #projects section {
+        margin-bottom: 40px;
+    }
+
+    #projects article {
+        padding-top: 0;
+    }
+
+    #projects .projects-container {
+        margin: 0 auto 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #projects .projects-container h2 {
+        font-size: 30px;
+        margin: 40px 0 10px;
+    }
+
+    #projects .projects-container figcaption {
+        font-size: 18px;
+    }
+
+    #projects a.typewrite {
+        font-size: 27px;
+    }
+
+    #projects li {
+        font-size: 19px;
+    }
+
+    .project button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    p {
+        font-size: 19px;
+        line-height: 1.4em;
+    }
+
+    #about {
+        padding: 40px 60px 70px;
+    }
+
+    #about h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    #about .about-description {
+        margin-top: 35px;
+    }
+
+    #about .about-img {
+        width: 350px;
+    }
+
+    #about .about-text {
+        margin-top: 3px;
+        padding: 10px 30px 10px;
+    }
+
+    #about .hobbies-container {
+        margin-top: 35px;
+    }
+
+    #about .hobbies-container h2 {
+        font-size: 33px;
+        margin-bottom: 10px;
+    }
+
+    #about .hobbies-container .material-symbols-outlined {
+        font-size: 35px;
+    }
+
+    .contact-container {
+        padding: 13px 0 30px;
+    }
+
+    .contact-container h2 {
+        font-size: 27px;
+    }
+
+    #resume h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    #resume h2 {
+        font-size: 28px;
+    }
+
+    #resume p,
+    #resume li {
+        font-size: 19px;
+
+    }
+
+    #resume .resume-intro {
+        margin-bottom: 40px;
+    }
+
+    #resume button {
+        padding: 10px 20px;
+        font-size: 17px;
+    }
+
+    #resume article {
+        margin: 0 150px 60px;
+    }
+
+    #resume li {
+        width: 560px;
+        line-height: 1.2em;
+    }
+
+    .project {
+        padding: 40px 100px 0;
+    }
+
+    #projects section {
+        margin-bottom: 40px;
+    }
+
+    #projects article {
+        padding-top: 0;
+    }
+
+    #projects .projects-container {
+        margin: 0 auto 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #projects .projects-container h2 {
+        font-size: 33px;
+        margin: 40px 0 10px;
+    }
+
+    #projects .projects-container figcaption {
+        font-size: 18px;
+    }
+
+    #projects a.typewrite {
+        font-size: 30px;
+    }
+
+    #projects li {
+        font-size: 19px;
+    }
+
+    .project button {
+        padding: 10px 20px;
+        font-size: 17px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    p {
+        font-size: 19px;
+        line-height: 1.4em;
+    }
+
+    #about {
+        padding: 40px 150px 70px;
+    }
+
+    #about h1 {
+        font-size: 40px;
+    }
+
+    #about .about-description {
+        margin-top: 35px;
+        flex-wrap: nowrap;
+    }
+
+    #about .about-img {
+        width: 350px;
+    }
+
+    #about .about-text {
+        margin-top: 0;
+        padding: 0 50px 0;
+    }
+
+    #about .hobbies-container {
+        margin-top: 36px;
+    }
+
+    #about .hobbies-container h2 {
+        font-size: 33px;
+        margin-bottom: 10px;
+    }
+
+    #about .hobbies-container .material-symbols-outlined {
+        font-size: 45px;
+    }
+
+    #about .hobbies-container p {
+        font-size: 25px;
+    }
+
+    .contact-container {
+        padding: 13px 0 30px;
+    }
+
+    .contact-container h2 {
+        font-size: 28px;
+    }
+
+    #resume h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    #resume h2 {
+        font-size: 30px;
+    }
+
+    #resume p,
+    #resume li {
+        font-size: 21px;
+
+    }
+
+    #resume .resume-intro {
+        margin-bottom: 60px;
+    }
+
+    #resume button {
+        padding: 13px 25px;
+        font-size: 18px;
+    }
+
+    #resume article {
+        margin: 0 250px 60px;
+    }
+
+    #resume .in-line-text {
+        flex-flow: row wrap;
+    }
+
+    #resume li {
+        width: 660px;
+        line-height: 1.3em;
+    }
+
+    .project {
+        padding: 40px 300px 0;
+    }
+
+    #projects section {
+        margin-bottom: 40px;
+    }
+
+    #projects article {
+        padding-top: 0;
+    }
+
+    #projects .projects-container {
+        margin: 0 auto 15px;
+    }
+
+    #projects .projects-container h2 {
+        font-size: 35px;
+        margin: 40px 0 10px;
+    }
+
+    #projects .projects-container figcaption {
+        font-size: 19px;
+    }
+
+    #projects a.typewrite {
+        font-size: 33px;
+    }
+
+    #projects li {
+        font-size: 20px;
+    }
+
+    .project button {
+        padding: 13px 25px;
+        font-size: 18px;
+    }
+}

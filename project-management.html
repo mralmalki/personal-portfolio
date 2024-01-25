@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    I360 Web Design
+    Personal Portfolio Website
+    Project Management Project Page
+    Mahmood Al-Malki
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmood Al-Malki | Project Management</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</head>
+
+<body>
+    <header>
+        <!-- NAVIGATION -->
+        <nav id="mySidenav" class="sidenav">
+            <ul>
+                <li><a class="closebtn">&times;</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+
+        <!-- Use any element to open the sidenav -->
+        <div class="openbtn">
+            <span class="material-symbols-outlined menu-button">menu</span>
+            <span class="menu-text">menu</span>
+        </div>
+
+        <div class="all-over-bkg"></div>
+
+        <h1><a href="about.html">Mahmood Al-Malki</a></h1>
+        <!-- An image taken by me -->
+        <img class="logo-img" src="images/logo.jpg" alt="Mahmood Al-Malki">
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="projects" class="project">
+        <div>
+            <h2>MID Project Management</h2>
+            <section>
+                <h3>Technologies I Used:</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>NextJs</li>
+                    <li>React</li>
+                    <li>TailwindCSS</li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h3>Project Description:</h3>
+                <p>MID Project Management was a project that I completed with my team during spring 2023. It aims to
+                    help teams assign, track and manage tasks, as well as monitor project progress through reporting and
+                    analytics. It includes features such as task assignment and tracking, time tracking, and reporting
+                    and analytics. The architecture style chosen is a microservices architecture, which allows for
+                    the development of independent services that can communicate with each other through APIs, providing
+                    greater scalability and flexibility. The design patterns used include the observer pattern to notify
+                    team members of updates to tasks, the factory pattern to create different types of tasks or reports,
+                    and the command pattern to implement undo and redo functionality.
+                </p>
+            </section>
+            <hr>
+            <section>
+                <h3>Role:</h3>
+                <p>
+                    In the course of the project, my primary focus was on the employer and employee portal as well as
+                    about pages. However, upon returning to work on the skill functionality, I ended up working on all
+                    aspects of the project, such as the home and view tasks pages.
+                </p>
+                <p>I assumed the position of an unofficial leader among the team members in my group. My aim was to assist
+                    the team in maintaining order and assigning tasks that required completion.
+                </p>
+            </section>
+            <hr>
+            <section>
+                <h3>What I learned:</h3>
+                <p>Throughout the process, I acquired a wealth of valuable knowledge and expertise. Although I had no
+                    prior experience in JavaScript, my familiarity with Java allowed me to quickly learn it.
+                    Additionally, I gained hands-on experience in developing websites with both front-end and back-end
+                    capabilities using NodeJS, which was an innovative and intriguing approach to web development.
+                    Furthermore, I was introduced to NextJS and React, which proved to be highly effective tools in
+                    designing site components, and TailwindCSS, which was both novel and practical. With access to all
+                    of these resources, I felt more imaginative and, overall, they facilitated the creation of a
+                    superior end product.
+                </p>
+            </section>
+            <hr>
+            <article class="projects-container">
+                <h2>Gallary</h2>
+                <div class="gallery">
+                    <!-- Images taken by me -->
+                    <figure class="hvr-grow">
+                        <img class="gallery-img" src="images/project-management-about.png"
+                            alt="MID Project Management | About">
+                        <figcaption>MID Project Management | About</figcaption>
+                    </figure>
+                    <figure class="hvr-grow">
+                        <img class="gallery-img" src="images/project-management-employer-portal.png"
+                            alt="MID Project Management | Employer Portal">
+                        <figcaption>MID Project Management | Employer Portal</figcaption>
+                    </figure>
+                    <figure class="hvr-grow">
+                        <img class="gallery-img" src="images/project-management-employee-portal.png"
+                            alt="MID Project Management | Employee Portal">
+                        <figcaption>MID Project Management | Employee Portal</figcaption>
+                    </figure>
+                    <figure class="hvr-grow">
+                        <img class="gallery-img" src="images/project-management-view-tasks.png"
+                            alt="MID Project Management | View Tasks">
+                        <figcaption>MID Project Management | View Tasks</figcaption>
+                    </figure>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <div class="contact">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/mahmood-al-malki-1a4964261/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li><i class="fa-solid fa-circle"></i></li>
+                <li>
+                    <a href="mailto:ma3mood.rashid@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/nav.js"></script>
+</body>
+
+</html>

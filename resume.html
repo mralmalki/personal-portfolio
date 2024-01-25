@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    I360 Web Design
+    Personal Portfolio Website
+    Resume Page
+    Mahmood Al-Malki
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmood Al-Malki | Resume</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Google Font -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+<body>
+    <header>
+        <!-- NAVIGATION -->
+        <nav id="mySidenav" class="sidenav">
+            <ul>
+                <li><a class="closebtn">&times;</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+
+        <!-- Use any element to open the sidenav -->
+        <div class="openbtn">
+            <span class="material-symbols-outlined menu-button">menu</span>
+            <span class="menu-text">menu</span>
+        </div>
+
+        <div class="all-over-bkg"></div>
+
+        <h1><a href="about.html">Mahmood Al-Malki</a></h1>
+        <!-- An image taken by me -->
+        <img class="logo-img" src="images/logo.jpg" alt="Mahmood Al-Malki">
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="resume">
+        <h1>Resume</h1>
+        <div class="resume-intro">
+            <div class="resume-intro-text">
+                <p>1265 S Fenbrook Ln, Bloomington, IN 47401</p>
+                <p>ma3mood.rashid@gmail.com | (812) 538-4351</p>
+            </div>
+            <button onclick="window.open('documents/resume.pdf', '_blank')">Resume</button>
+        </div>
+        <article>
+            <h2>EDUCATION</h2>
+            <hr>
+            <div class="in-line-text">
+                <p><strong>Indiana University</strong>, Bloomington, IN</p>
+                <p>January 2021–Present</p>
+            </div>
+            <p>Bachelor of Science in Computer Science</p>
+            <p><strong>Specialization:</strong> Software Engineering</p>
+            <p><strong>Minor</strong>: Informatics</p>
+            <p><strong>Cumulative GPA</strong>: 3.954/4.00</p>
+        </article>
+        <article>
+            <h2>WORK EXPERIENCE</h2>
+            <hr>
+            <div class="in-line-text">
+                <p><strong>IU Luddy School of Informatics, Computing, and Engineering</strong>, Bloomington, IN</p>
+                <p>Fall 2022</p>
+            </div>
+            <p>Teaching Assistant - Introduction to Programming in Python</p>
+            <ul>
+                <li>Assisted the instructor in creating and grading labs, homework, projects, midterms, and final exams.
+                </li>
+                <li>Led weekly labs and provided assistance to students.</li>
+                <li>Helped students one-on-one with homework, labs, and understanding course material at weekly office
+                    hours.</li>
+                <li>Provided feedback on students' progress and performance.</li>
+            </ul>
+        </article>
+        <article>
+            <h2>TECHNICAL SKILLS</h2>
+            <hr>
+            <p><strong>Languages: </strong>Java, Python, C</p>
+            <p><strong>Platforms: </strong>UNIX, Microsoft Windows</p>
+            <p><strong>Web development: </strong>HTML, CSS, JavaScript</p>
+        </article>
+    </main>
+
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <div class="contact">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/mahmood-al-malki-1a4964261/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li><i class="fa-solid fa-circle"></i></li>
+                <li>
+                    <a href="mailto:ma3mood.rashid@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/nav.js"></script>
+</body>
+
+</html>
